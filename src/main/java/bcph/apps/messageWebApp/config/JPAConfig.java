@@ -13,10 +13,10 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 
 @Configuration
-@EnableJpaRepositories( basePackages ={ "bcph.app.messageWebApp.model"})
+@EnableJpaRepositories( basePackages ={"bcph.app.messageWebApp.model"})
 public class JPAConfig {
 	
-	static String LOCAL_DATABASE_NAME = "testSens";
+	static String LOCAL_DATABASE_NAME = "messageWebApp";
 	
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
